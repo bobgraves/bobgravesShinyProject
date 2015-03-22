@@ -29,7 +29,9 @@ shinyUI(pageWithSidebar(
     ),
     mainPanel(
         h3('Linear Regression Model'),
-        h4('lm() Function'),
+        h4('Selections'),
+        verbatimTextOutput("oid1"),
+        h4('lm() Function (Click Go to evaluate)'),
         verbatimTextOutput("oid2"),
         h3("Plot of the Model (Click Go to evaluate)"),
         plotOutput('newHist'),

@@ -18,7 +18,7 @@ shinyServer(
     function(input, output) {
         f<-"mpg ~ am"
         fit<-lm(mpg~am,data=mtcars)
-        output$oid1 <- renderPrint({input$id1})
+        output$oid1 <- renderPrint({input$id2})
         
         output$oid2 <- renderPrint({
             if (input$goButton == 0) {

@@ -33,6 +33,7 @@ shinyUI(pageWithSidebar(
         verbatimTextOutput("oid2"),
         h3("Plot of the Model (Click Go to evaluate)"),
         plotOutput('newHist'),
-        h4("Developing Data Products, Bob Graves")
+        h4("Developing Data Products, Bob Graves"),
+        a(href="http://github.com/bobgraves/bobgravesShinyProject", "Find this app on GitHub")
     )
 ))
